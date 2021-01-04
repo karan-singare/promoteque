@@ -1,0 +1,40 @@
+.icons-composition {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+
+  .heading__primary {
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  &__details {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+  }
+  .icons-grid {
+    display: grid;
+    justify-content: end;
+    text-align: center;
+
+    font-size: 1.6rem;
+
+    .icons-grid-item {
+      fill: $color-primary;
+      &:nth-child(2) {
+        transform: translateX(-100%);
+      }
+    }
+
+    &--left {
+      justify-content: start;
+
+      .icons-grid-item {
+        fill: $color-primary;
+        &:nth-child(2) {
+          transform: translateX(100%);
+        }
+      }
+    }
+
+  }
+}

@@ -13,14 +13,13 @@
     font-size: $default-font-size;
 
     /*changes for the button*/
-    border: none;
     cursor: pointer;
   }
 
   &:hover {
-    transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    transform: translateY(-.3px);
   }
+
 
   /*when button is clicked*/
   &:active {
@@ -28,22 +27,12 @@
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
+  &--dense {
 
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-
-    &::after {
-      background-color: $color-white;
-    }
   }
-  &--green {
-    background-color: $color-primary;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-primary;
-    }
+  &--hollow {
+    color: $color-primary;
+    border: 2px solid $color-primary;
   }
 
   &--animated {
@@ -72,6 +61,8 @@
       opacity: 0;
     }
   }
+
+
 }
 
 .btn-text {
