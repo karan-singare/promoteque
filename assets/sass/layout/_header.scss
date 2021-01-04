@@ -1,8 +1,8 @@
 .header {
   position: relative;
-  background: red;
   height: 10vh;
   padding: 2rem;
+  z-index: 2;
 
 
   &-container {
@@ -51,6 +51,7 @@
       cursor: pointer;
     }
     display: none;
+    opacity: 1;
 
   }
 }
