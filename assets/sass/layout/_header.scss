@@ -1,34 +1,76 @@
 .header {
-  height: 95vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-primary-light, 0.5),
-    rgba($color-primary-dark, 0.5)),
-  url('../images/hero.jpg');
-  background-size: cover;
-  background-position: top;
   position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
+  background: red;
+  height: 10vh;
+  padding: 2rem;
 
-  @include respond(phone) {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85vh, 0% 100%);
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
 
-  &__logo-box {
+  .menu-svg {
+    width: 4rem;
+    height: 4rem;
+    fill: $color-white;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    span {
+      margin-right: 1rem;
+      font-size: 2rem;
+      color: $color-white;
+    }
+  }
+
+  .nav-container {
+    padding: 2rem 0;
+    text-align: right;
+
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-image: url(../images/nav-bg.jpg);
+
+    @include coverBackground;
+    height: 100vh;
+
+    .nav-icon {
+      width: 4rem;
+      height: 4rem;
+      fill: $color-white;
+      cursor: pointer;
+    }
+    display: none;
+
+  }
+}
+#menu-main-navigation {
+  font-size: 6rem;
+  font-weight: 700;
+  list-style: none;
+
+  .menu-item {
+    a {
+      color: $color-white;
+      border-bottom: 4px solid transparent;
+      transform: all .4s ease-out;
+
+      &:hover {
+        border-bottom: 4px solid $color-white;
+      }
+    }
+
   }
 
-  &__logo {
-    height: 3.5rem;
-  }
 
-  &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 }

@@ -15,7 +15,7 @@ function style() {
     .pipe(concat("styles.css"))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest("./assets/css"))
-    .pipe(browserSync.stream());
+    .pipe(reload({stream: true}));
 }
 
 
@@ -26,11 +26,17 @@ function watch() {
   });
   gulp.watch('./assets/sass/**/*.scss', style);
   gulp.watch('./**/*.php', php);
+  gulp.watch('./assets/js/script.js', js);
 }
 
 function php() {
   return gulp
   .src('./**/*.php')
+  .pipe(reload({stream: true}));
+}
+function js() {
+  return gulp
+  .src('./assets/js/script.js')
   .pipe(reload({stream: true}));
 }
 
