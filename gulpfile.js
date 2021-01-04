@@ -1,33 +1,37 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
-var sourcemaps = require('gulp-source')
-const browserSync = require('browser-sync').reload;
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
 
 function style() {
   return gulp
-    .src('./assets/sass/**/*.scss')
-    .pipe(sass())
+    .src(["./assets/sass/main.scss", "./assets/sass/**/*.scss"])
     .pipe(sourcemaps.init())
-    .pipe(concat('styles.css'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./assets/css/'))
+    .pipe(sass({ outputStyle: "expanded" }))
+    .pipe(autoprefixer({ browsers: ['last 5 versions'], cascade: false }))
+    .pipe(concat("styles.css"))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest("./assets/css"))
     .pipe(browserSync.stream());
 }
 
-function php() {
-  return gulp
-  .src('./**/*.php')
-  .pipe(browserSync.stream());
-}
 
 function watch() {
   browserSync.init({
     proxy: 'http://thesocialedition.local/',
     notify: true
   });
-  gulp.watch('./sass/**/*.scss', style);
-  gulp.watch('/**/*.php', php);
+  gulp.watch('./assets/sass/**/*.scss', style);
+  gulp.watch('./**/*.php', php);
+}
+
+function php() {
+  return gulp
+  .src('./**/*.php')
+  .pipe(reload({stream: true}));
 }
 
 exports.style = style;
