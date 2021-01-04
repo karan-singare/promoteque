@@ -7,9 +7,18 @@
   .video{
     height: 100%;
     width: 100%;
-
     video {
       @include coverObject;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom, rgba(transparent, .7), rgba(transparent, .3), rgba(transparent, .7)) !important;
     }
 
   }
@@ -27,5 +36,13 @@
       fill: $color-white;
     }
 
+  }
+  .video-headings {
+    text-align: center;
+    @include absCenter;
+
+    .heading__primary--main {
+      margin-bottom: 1rem;
+    }
   }
 }
