@@ -1,49 +1,11 @@
 .footer {
   color: $color-grey-light-1;
   background-color: $color-grey-dark-4;
-
   padding: 10rem 0;
   font-size: 2rem;
-
   h4 {
     margin-bottom: 2rem;
   }
-
-  ul {
-    list-style: none;
-    font-size: 1.6rem;
-    font-weight: thin;
-
-    a {
-      color: $color-white;
-
-    }
-  }
-
-  .contact {
-    a {
-      display: flex;
-      align-content: center;
-      align-items: center;
-    }
-    svg {
-      height: 1.6rem;
-      width: 1.6rem;
-      fill: $color-white;
-      margin-right: 1rem;
-    }
-  }
-  .connect {
-    ul {
-      display: flex;
-      grid-gap: 2rem;
-    }
-    svg {
-      height: 3rem;
-      width: 3rem;
-    }
-  }
-
   &__sub {
     background-color: $color-black;
     padding: 1rem 0;
@@ -56,4 +18,35 @@
     }
   }
 
+}
+ul {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: thin;
+  a {
+    color: $color-white;
+  }
+}
+.contact {
+  a {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  svg {
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: $color-white;
+    margin-right: 1rem;
+  }
+}
+.connect {
+  ul {
+    display: flex;
+    grid-gap: 2rem;
+  }
+  svg {
+    height: 3rem;
+    width: 3rem;
+  }
 }

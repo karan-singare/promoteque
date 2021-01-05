@@ -33,6 +33,7 @@
   &--hollow {
     color: $color-primary;
     border: 2px solid $color-primary;
+    background: transparent;
   }
 
   &--animated {

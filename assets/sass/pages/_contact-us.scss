@@ -1,0 +1,23 @@
+.contact-us {
+  background: $color-light-background;
+  font-size: 2rem;
+  p {
+    width: 80%;
+  }
+  .section__heading {
+    text-align: left;
+  }
+  .contact {
+    margin: 4rem 0;
+  }
+
+  .connect {
+    margin-top: 10rem;
+  }
+  a {
+    color: $color-black;
+    svg {
+      fill: $color-black;
+    }
+  }
+}

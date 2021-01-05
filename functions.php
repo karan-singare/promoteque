@@ -64,6 +64,12 @@
         'page_description' => 'Digital solutions that address real business needs',
         'banner_img' => get_images_path() . 'services.jpg'
       ],
+      'contact-us' => [
+        'page_name' => 'contact-us',
+        'page_title' => 'Contact Us',
+        'page_description' => '',
+        'banner_img' => get_images_path() . 'contact-us.jpg'
+      ],
       'blog' => [
         'page_name' => 'blog',
         'page_title' => 'News, Views & Tips',
