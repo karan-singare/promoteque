@@ -1,15 +1,12 @@
 .photo-composition {
   height: 60rem;
   padding: 15rem 0;
-
   font-size: 2rem;
   position: relative;
-
 
   &__content {
     max-width: $grid-width;
     margin: 0 auto;
-
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
@@ -18,11 +15,12 @@
     &--left {
       margin-top: -10rem;
     }
+
     &--right {
       margin-top: 20rem;
     }
-
   }
+
   &__heading {
     font-size: 4rem;
     color: $color-primary;
@@ -32,6 +30,7 @@
     line-height: 1.2;
     margin-bottom: 2rem;
   }
+
   &__title {
     margin-bottom: 2rem;
     color: $color-white;
@@ -51,16 +50,47 @@
   &--1 {
     &::before {
       right: 0;
-      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url(../images/biking.jpg);
+      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url("../images/biking.jpg");
     }
   }
+
   &--2 {
     &::before {
       left: 0;
-      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url(../images/skateboard.jpg);
+      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url("../images/skateboard.jpg");
     }
+
     .photo-composition__content--right {
       text-align: right;
+    }
+  }
+
+  &--updown {
+    &::before {
+      top: -20%;
+      left: 0;
+      background-position-y: top;
+      background-position-x: right;
+      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url("../images/founder.png");
+    }
+
+    .photo-composition__content--right {
+      grid-column: 1/2;
+      span {
+        color: $color-primary;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      // background-image: linear-gradient(to bottom, rgba(transparent, .5), rgba(transparent, 0), rgba(transparent, .5));
+      background: $color-light-background;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
     }
   }
 }
