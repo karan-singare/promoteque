@@ -11,7 +11,10 @@
 
 </head>
 <body <?php body_class(); ?>>
-
+  <div class="preloader-container">
+    <div class="preloader">
+    </div>
+  </div>
 
     <header class="header">
       <div class="row">
