@@ -1,4 +1,4 @@
-<section class="story">
+<section class="strength">
   <div class="row">
     <div class="icons-composition">
       <div class="icons-grid icons-grid--left">

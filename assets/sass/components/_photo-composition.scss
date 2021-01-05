@@ -1,0 +1,66 @@
+.photo-composition {
+  height: 60rem;
+  padding: 15rem 0;
+
+  font-size: 2rem;
+  position: relative;
+
+
+  &__content {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+
+    &--left {
+      margin-top: -10rem;
+    }
+    &--right {
+      margin-top: 20rem;
+    }
+
+  }
+  &__heading {
+    font-size: 4rem;
+    color: $color-primary;
+    text-transform: uppercase;
+    // width: 60%;
+    letter-spacing: 1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 2rem;
+    color: $color-white;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  }
+
+  &--1 {
+    &::before {
+      right: 0;
+      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url(../images/biking.jpg);
+    }
+  }
+  &--2 {
+    &::before {
+      left: 0;
+      background-image: linear-gradient(to top, rgba(transparent, .9), rgba(transparent, 0)), url(../images/skateboard.jpg);
+    }
+    .photo-composition__content--right {
+      text-align: right;
+    }
+  }
+}
