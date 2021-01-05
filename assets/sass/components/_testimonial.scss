@@ -1,0 +1,31 @@
+.testimonial {
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 1.4rem;
+  grid-gap: 5rem;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  &:nth-child(even) {
+    .testimonial__photo {
+      grid-column: 2/3;
+    }
+  }
+
+  &__photo {
+    width: 20rem;
+    height: 20rem;
+  }
+  &__img {
+    @include coverObject;
+    border-radius: 50%;
+  }
+  &__text {
+    margin-bottom: 1rem;
+  }
+  &__author {
+    color: $color-primary;
+  }
+}
