@@ -1,0 +1,30 @@
+.clients {
+  text-align: center;
+  padding: 10rem 0;
+
+  font-size: 2rem;
+
+  .heading__primary {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    letter-spacing: .8rem;
+  }
+  p {
+    margin-bottom: 6rem;
+  }
+}
+.clients-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  justify-content: space-evenly;
+}
+.clients-grid-item {
+  width: 15rem;
+  height: 15rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
