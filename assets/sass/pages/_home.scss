@@ -1,3 +1,17 @@
 .story, .strength {
   background: $color-light-background;
 }
+.section__heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $color-primary;
+}
+.section__description {
+  margin-bottom: 6rem;
+  text-align: center;
+  font-size: 2rem;
+}

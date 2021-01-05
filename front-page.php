@@ -5,5 +5,6 @@
   <?php get_template_part('partials/photo-composition'); ?>
   <?php get_template_part('partials/strength'); ?>
   <?php get_template_part('partials/clients'); ?>
+  <?php get_template_part('partials/work'); ?>
 
 <?php get_footer(); ?>

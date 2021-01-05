@@ -7,4 +7,8 @@ $(document).ready(() => {
     $('.nav-container').slideUp(100);
     $('.menu-icon').fadeIn(200);
   });
+
+
+
+
 });
