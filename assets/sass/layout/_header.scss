@@ -9,6 +9,12 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+
+    .site-logo {
+      img {
+        height: 6rem;
+      }
+    }
   }
 
   .menu-svg {

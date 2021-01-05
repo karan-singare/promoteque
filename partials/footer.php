@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer footer--main">
   <div class="row">
     <div class="col-1-of-4 policies">
       <h4>Policies</h4>
@@ -70,3 +70,6 @@
     </div>
   </div>
 </footer>
+<div class="footer__sub">
+  <p class="copyright"><a href="/">The Social Edition</a> &copy; 2021 All Rights Reserved.</p>
+</div>
