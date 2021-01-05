@@ -4,9 +4,11 @@
     </video>
   </div>
   <div class="scroll-btn animate__animated animate__bounce animate__infinite infinite">
-    <svg class="">
-      <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-chevrons-down' ?>"></use>
-    </svg>
+    <button class="story-anchor">
+      <svg class="">
+        <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-chevrons-down' ?>"></use>
+      </svg>
+    </button>
   </div>
   <div class="video-headings">
     <h1 class="heading__primary heading__primary--main">Design.Social.Content.</h1>

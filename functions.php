@@ -8,6 +8,7 @@
   function promoteque_register_styles() {
     wp_enqueue_style('promoteque-animate', get_template_directory_uri() . '/assets/css/animate.min.css', [], '1.0', 'all');
     wp_enqueue_style('promoteque-main', get_template_directory_uri() . '/assets/css/styles.css', [], '1.0', 'all');
+    wp_enqueue_style('promoteque-rjedit', get_template_directory_uri() . '/assets/css/rjstyles.css', [], '1.0', 'all');
   }
   add_action('wp_enqueue_scripts', 'promoteque_register_styles');
 

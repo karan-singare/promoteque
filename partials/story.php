@@ -1,4 +1,4 @@
-<section class="story">
+<section class="story" id="story">
   <div class="row">
     <div class="icons-composition">
       <div class="icons-composition__content">

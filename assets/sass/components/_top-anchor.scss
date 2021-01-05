@@ -1,0 +1,25 @@
+.top-anchor {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(transparent, .8);
+  z-index: 1000;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+
+  svg {
+    fill: $color-primary;
+    height: 6rem;
+    width: 6rem;
+  }
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  // display: none;
+  // opacity: 0;
+
+  transition: all 2s ease-in-out;
+
+}
