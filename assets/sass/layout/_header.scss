@@ -6,6 +6,8 @@
 
 
   &-container {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -16,68 +18,5 @@
       }
     }
   }
-
-  .menu-svg {
-    width: 4rem;
-    height: 4rem;
-    fill: $color-white;
-  }
-
-  .menu-icon {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-
-    span {
-      margin-right: 1rem;
-      font-size: 2rem;
-      color: $color-white;
-    }
-  }
-
-  .nav-container {
-    padding: 2rem 0;
-    text-align: right;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    background-image: url(../images/nav-bg.jpg);
-
-    @include coverBackground;
-    height: 100vh;
-
-    .nav-icon {
-      width: 4rem;
-      height: 4rem;
-      fill: $color-white;
-      cursor: pointer;
-    }
-    display: none;
-    opacity: 1;
-
-  }
-}
-#menu-main-navigation {
-  font-size: 6rem;
-  font-weight: 700;
-  list-style: none;
-
-  .menu-item {
-    a {
-      color: $color-white;
-      border-bottom: 4px solid transparent;
-      transform: all .4s ease-out;
-
-      &:hover {
-        border-bottom: 4px solid $color-white;
-      }
-    }
-
-  }
-
 
 }

@@ -4,12 +4,9 @@
   }
 
   &__button {
-    background-color: $color-white;
     height: 7rem;
     width: 7rem;
-    position: fixed;
-    top: 6rem;
-    right: 6rem;
+    position: absolute;
     border-radius: 50%;
     z-index: 200;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -29,13 +26,14 @@
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
-    position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    position: absolute;
+    background-image: radial-gradient(rgba(transparent, .9), rgba(transparent, .9));
+    background-position: center center;
+    background-size: cover;
+
     z-index: 100;
 
     transition: transform .6s cubic-bezier(0.83, 0, 0.17, 1);
@@ -64,7 +62,7 @@
     transition: all .6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
-  &__list {
+  &__list{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,7 +71,7 @@
     text-align: center;
   };
 
-  &__item {
+  &__item, .menu-item {
     margin: 1rem;
   }
 
@@ -81,16 +79,15 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 3rem;
+      font-size: 6rem;
       font-weight: 300;
       padding: 1rem 2rem;
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
+      border-bottom: 4px solid transparent;
 
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-      background-size: 225%;
-      transition: all .4s;
+      transition: all .4s ease-in;
 
       & span {
         margin-right: 1rem;
@@ -105,9 +102,8 @@
 
     &:hover,
     &:active {
-      background-position: 100%;
+      border-bottom: 4px solid $color-primary;
       color: $color-primary;
-      transform: translateX(1rem);
     }
   }
 
@@ -126,9 +122,9 @@
     &,
     &::before,
     &::after {
-      width: 3rem;
-      height: 2px;
-      background-color: $color-grey-dark-3;
+      width: 4rem;
+      height: 4px;
+      background-color: $color-white;
       display: inline-block;
     }
 
