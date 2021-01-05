@@ -92,7 +92,7 @@
 
     echo "
       <div class='banner'>
-        <div class='banner__img-container'>
+        <div class='banner__photo'>
           <img src='" . $page['banner_img'] . "' alt='' class='banner__img'>
         </div>
         <div class='banner__headings'>
