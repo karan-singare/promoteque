@@ -100,7 +100,7 @@
     echo "
       <div class='banner'>
         <div class='banner__photo'>
-          <img src='" . $page['banner_img'] . "' alt='' class='banner__img'>
+          <img src='" . $page['banner_img'] . "' alt='' class='banner__img' onload='hidePreloader()'>
         </div>
         <div class='banner__headings'>
           <h1 class='heading__primary heading__primary--main'>" . $page['page_title'] . "</h1>

@@ -16,7 +16,7 @@
     <div class="clients-grid">
       <?php foreach ($clinets as $client): ?>
         <div class="clients-grid-item">
-          <img src="<?php echo $client; ?>" alt="">
+          <img src="<?php echo $client; ?>" alt="" loading="lazy">
         </div>
       <?php endforeach; ?>
 

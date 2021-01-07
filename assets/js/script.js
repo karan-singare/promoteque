@@ -1,20 +1,35 @@
-$(document).ready(() => {
-  /**
-   * Preloader Handler
-   */
-  $(window).on('load', function() {
-    $('.preloader-container').fadeOut();
+/**
+* Preloader Handler
+*/
+function hidePreloader() {
+  $('.preloader-container').fadeOut();
+}
+if (window.location.pathname === "/") {
+  // document.addEventListener("DOMContentLoaded", bannerLoaded);
+  video = document.querySelector('.video-container video');
+
+  video.addEventListener('loadeddata', (e) => {
+    if (video.readyState === 4) {
+      hidePreloader();
+      if (video.paused) {
+        video.play();
+      }
+    }
   });
-  /**
-   * Novigation
-   */
+
+}
+
+$('.video-container video').on('load' ,() => {
+  console.log("video loaded");
+});
+
+
+$(document).ready(() => {
+
   $('.menu-main-navigation-container').addClass('navigation__nav');
   $('#menu-main-navigation').addClass('navigation__list');
   $('#menu-main-navigation .menu-item').addClass('navigation__item');
   $('#menu-main-navigation .menu-item a').addClass('navigation__link');
-
-
-
   /**
    * Scroll to Top
    */
@@ -32,4 +47,5 @@ $(document).ready(() => {
   $('.story-anchor').click(() => {
     window.scrollTo(0, $('#story').offset().top);
   });
+
 });

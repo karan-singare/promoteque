@@ -8,7 +8,7 @@
     <div class="">
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial1.jpg'; ?>" alt="" class="testimonial__img">
+          <img src="<?php echo get_images_path() . 'testimonial1.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
@@ -20,7 +20,7 @@
       </div>
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial2.jpg'; ?>" alt="" class="testimonial__img">
+          <img src="<?php echo get_images_path() . 'testimonial2.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
@@ -32,7 +32,7 @@
       </div>
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial3.jpg'; ?>" alt="" class="testimonial__img">
+          <img src="<?php echo get_images_path() . 'testimonial3.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">

@@ -1,6 +1,6 @@
 <div class="video-container">
   <div class="video">
-    <video class="video" src="<?php echo get_images_path() . 'video.mp4' ?>" autoplay loop mute>
+    <video class="video" src="<?php echo get_images_path() . 'video.mp4' ?>"  loop muted autoplay preload="auto"  poster="<?php echo get_images_path() . 'poster.png' ?>">
     </video>
   </div>
   <div class="scroll-btn animate__animated animate__bounce animate__infinite infinite">
