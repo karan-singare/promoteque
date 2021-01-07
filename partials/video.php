@@ -10,8 +10,9 @@
       </svg>
     </button>
   </div>
+
   <div class="video-headings">
-    <h1 class="heading__primary heading__primary--main">Design.Social.Content.</h1>
+    <h1 class="heading__primary heading__primary--main">Design Social Content</h1>
     <h1 class="heading__primary heading__primary--sub">Digital transformation starts here</h1>
   </div>
 </div>

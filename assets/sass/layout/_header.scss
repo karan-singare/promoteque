@@ -4,13 +4,21 @@
   z-index: 2;
   background-image: linear-gradient(to right, rgba(transparent, .8), rgba(transparent, 0));
 
+  .header-row {
+    height: 100%;
+  }
 
   &-container {
     position: relative;
 
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
     align-content: center;
+    .navigation {
+      width: 7rem;
+      height: 7rem;
+    }
 
     .site-logo {
       img {
@@ -18,5 +26,4 @@
       }
     }
   }
-
 }

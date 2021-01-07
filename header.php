@@ -17,7 +17,7 @@
   </div>
 
     <header class="header" id="header">>
-      <div class="row">
+      <div class="row header-row">
         <div class="header-container">
           <div class="site-logo">
             <a href="/"><img src="<?php echo get_images_path() . 'site-logo.png' ?>" alt="The Social Edition Logo"></a>

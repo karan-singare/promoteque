@@ -1,3 +1,5 @@
 .story {
-  
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
 }

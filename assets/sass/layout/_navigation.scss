@@ -1,4 +1,8 @@
 .navigation {
+  height: 7rem;
+  width: 7rem;
+
+
   &__checkbox {
     display: none;
   }
@@ -14,15 +18,19 @@
     text-align: center;
     cursor: pointer;
 
-    @include respond(tab-port) {
-      top: 4rem;
-      right: 4rem;
-    }
-
-    @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
-    }
+    // @include respond(big-desktop) {
+    //   top: 4rem;
+    //   right: 4rem;
+    // }
+    // @include respond(tab-port) {
+    //   top: 4rem;
+    //   right: 4rem;
+    // }
+    //
+    // @include respond(phone) {
+    //   top: 3rem;
+    //   right: 3rem;
+    // }
   }
 
   &__background {
@@ -38,15 +46,15 @@
 
     transition: transform .6s cubic-bezier(0.83, 0, 0.17, 1);
 
-    @include respond(tab-port) {
-      top: 4.5rem;
-      right: 4.5rem;
-    }
-
-    @include respond(phone) {
-      top: 3.5rem;
-      right: 3.5rem;
-    }
+    // @include respond(tab-port) {
+    //   top: 4.5rem;
+    //   right: 4.5rem;
+    // }
+    //
+    // @include respond(phone) {
+    //   top: 3.5rem;
+    //   right: 3.5rem;
+    // }
   }
 
   &__nav {

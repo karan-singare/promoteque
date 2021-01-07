@@ -1,4 +1,10 @@
 .work {
   background: $color-light-background;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    .gallery {
+      margin: 0 -3rem;
+    }
+  }
 }

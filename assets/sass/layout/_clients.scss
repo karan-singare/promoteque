@@ -18,10 +18,19 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, 15rem);
   justify-content: space-evenly;
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(auto-fit, 8rem);
+  }
+
 }
 .clients-grid-item {
   width: 15rem;
   height: 15rem;
+  @include respond(tab-port) {
+    width: 8rem;
+    height: 8rem;
+  }
 
   img {
     width: 100%;

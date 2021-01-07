@@ -28,4 +28,15 @@
   &__author {
     color: $color-primary;
   }
+
+  @include respond(tab-port) {
+    &__photo {
+      width: 12rem;
+      height: 12rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+
 }
