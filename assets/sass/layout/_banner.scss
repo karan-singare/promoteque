@@ -1,7 +1,8 @@
 .banner {
   height: 50vh;
-  margin-top: -10vh;
+  margin-top: -12vh;
   position: relative;
+
 
   &__photo {
     width: 100%;
@@ -12,6 +13,7 @@
   }
   &__headings {
     @include absCenter;
+    top: 70%;
     color: $color-white;
 
     .heading__primary {
@@ -36,6 +38,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(transparent, 0), rgba(transparent, .7), rgba(transparent, .7), rgba(transparent, 0));
+    background-image: linear-gradient(to bottom, rgba(transparent, 0), rgba(transparent, .6) 50%, rgba(transparent, .6) 70%, rgba(transparent, 0));
   }
 }

@@ -4,27 +4,32 @@
 function hidePreloader() {
   $('.preloader-container').fadeOut();
 }
-if (window.location.pathname === "/") {
-  // document.addEventListener("DOMContentLoaded", bannerLoaded);
-  video = document.querySelector('.video-container video');
 
-  video.addEventListener('loadeddata', (e) => {
-    if (video.readyState === 4) {
-      hidePreloader();
-      if (video.paused) {
-        video.play();
-      }
-    }
-  });
-
-}
-
-$('.video-container video').on('load' ,() => {
-  console.log("video loaded");
-});
 
 
 $(document).ready(() => {
+  // Handling the preloader of the website in the pages which do not have
+  const pages = [
+    '/',
+    '/about-us/',
+    '/contact-us/',
+    '/services/',
+    '/blogs/'
+  ];
+  console.log(pages);
+  const pathname = window.location.pathname;
+  for (let i=0; i < pages.length; i++ ) {
+    if (pathname !== pages[i]) {
+      $('.preloader-container').fadeOut();
+      // $('header').css({
+      //   'background-color': 'black',
+      //   'height': '15vh'
+      // });
+    }
+  }
+
+
+  // $('.preloader-container').fadeOut();
 
   $('.menu-main-navigation-container').addClass('navigation__nav');
   $('#menu-main-navigation').addClass('navigation__list');

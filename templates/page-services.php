@@ -5,7 +5,7 @@
 
   get_header();
 
-  load_banner('contact-us');
+  load_banner('services');
 
   $args = [
     'post_type' => 'service',

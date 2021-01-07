@@ -13,8 +13,8 @@
   add_action('wp_enqueue_scripts', 'promoteque_register_styles');
 
   function promoteque_register_scripts() {
-    wp_enqueue_script('promoteque-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], '3.5.1', true);
-    wp_enqueue_script('promoteque-main', get_template_directory_uri() . '/assets/js/script.js', ['promoteque-jquery'], '1.0', true);
+    wp_enqueue_script('promoteque-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], '3.5.1', false);
+    wp_enqueue_script('promoteque-main', get_template_directory_uri() . '/assets/js/script.js', ['promoteque-jquery'], '1.0', false);
   }
   add_action('wp_enqueue_scripts', 'promoteque_register_scripts');
 
@@ -31,7 +31,7 @@
   }
   add_action('init', 'promoteque_theme_setup');
 
-  
+
 
 
   /*
@@ -56,6 +56,7 @@
       'all_items' => 'All Services',
       'add_new_item' => 'Add Service',
       'new_item' => 'New Service',
+      'edit_item' => 'Edit Service',
       'view_item' => 'View Service',
       'search_item' => 'Search Service',
       'not_found' => 'No Services found',
@@ -97,6 +98,12 @@
 
   function get_static_pages() {
     $static_pages = [
+      '404' => [
+        'page_name' => '404',
+        'page_title' => 'The Page Not Found',
+        'page_description' => '',
+        'banner_img' => get_images_path() . '404.jpg'
+      ],
       'about-us' => [
         'page_name' => 'about-us',
         'page_title' => 'The Social Edition',
@@ -115,11 +122,11 @@
         'page_description' => '',
         'banner_img' => get_images_path() . 'contact-us.jpg'
       ],
-      'blog' => [
-        'page_name' => 'blog',
+      'blogs' => [
+        'page_name' => 'blogs',
         'page_title' => 'News, Views & Tips',
         'page_description' => '<a href="https://thesocialedition.com/">The Social Edition</a> / News, Views & Tips',
-        'banner_img' => get_images_path() . 'blog.jpg'
+        'banner_img' => get_images_path() . 'blogs.jpg'
       ],
     ];
 
@@ -139,19 +146,28 @@
   }
 
   function load_banner(string $page_name) {
-    $page = get_page_details($page_name);
+    if ($page_name == "") {
+      // echo "<script type='text/javascript'>
+      //         $('header').css('background': 'black');
+      //      </script>";
+      echo "";
+    } else {
 
-    echo "
-      <div class='banner'>
+      $page = get_page_details($page_name);
+
+      echo "
+        <div class='banner'>
         <div class='banner__photo'>
-          <img src='" . $page['banner_img'] . "' alt='' class='banner__img' onload='hidePreloader()'>
+        <img src='" . $page['banner_img'] . "' alt='' class='banner__img' onload='hidePreloader()'>
         </div>
         <div class='banner__headings'>
-          <h1 class='heading__primary heading__primary--main'>" . $page['page_title'] . "</h1>
-          <h2 class='heading__primary heading__primary--sub'>" . $page['page_description'] . "</h2>
+        <h1 class='heading__primary heading__primary--main'>" . $page['page_title'] . "</h1>
+        <h2 class='heading__primary heading__primary--sub'>" . $page['page_description'] . "</h2>
         </div>
-      </div>
-      ";
+        </div>
+        ";
+    }
+
   }
 
 

@@ -1,8 +1,8 @@
 .header {
   position: relative;
-  height: 10vh;
-  padding: 2rem;
+  height: 12vh;
   z-index: 2;
+  background-image: linear-gradient(to right, rgba(transparent, .8), rgba(transparent, 0));
 
 
   &-container {
