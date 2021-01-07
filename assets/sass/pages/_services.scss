@@ -1,0 +1,32 @@
+.services-section {
+  background: $color-light-background;
+}
+.services {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, 50rem);
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.service {
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  padding: 1.5rem;
+  border-radius: .4rem;
+  box-shadow: 0 0 5px 1px rgba(149, 156, 151, 0.72);
+
+
+
+  font-size: 1.2rem;
+  &__title {
+    font-size: 2rem;
+  }
+  &__description {
+    font-size: 1.8rem;
+  }
+  &__details {
+    font-size: 1.4rem;
+  }
+}

@@ -24,11 +24,14 @@
   function promoteque_theme_setup()  {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
+    add_theme_support( 'post-formats', ['aside', 'image', 'video'] );
 
     register_nav_menu('primary', 'Primary Header Navigation');
 
   }
   add_action('init', 'promoteque_theme_setup');
+
+  
 
 
   /*
@@ -42,6 +45,47 @@
   function get_images_path() {
     return get_template_directory_uri() . '/assets/images/';
   }
+  /**
+   * Custom Post Type Service
+   */
+  function promoteque_post_type_service() {
+    $labels = [
+      'name' => 'Services',
+      'singular_name' => 'Service',
+      'add_new' => 'Add Service',
+      'all_items' => 'All Services',
+      'add_new_item' => 'Add Service',
+      'new_item' => 'New Service',
+      'view_item' => 'View Service',
+      'search_item' => 'Search Service',
+      'not_found' => 'No Services found',
+      'not_found_in_trash' => 'No Services found in trash',
+      'parent_item_colon' => 'Parent Item'
+    ];
+    $args = [
+      'labels' => $labels,
+      'public' => true,
+      'has_archive' => true,
+      'publicly_queryable' => true,
+      'query_var' => true,
+      'rewrite' => true,
+      'capability_type' => 'post',
+      'hierarchicalal' => false,
+      'supports' => [
+        'title',
+        'editor',
+        'excerpt',
+        'thumbnail',
+        'revisions'
+      ],
+      'taxonomies' => ['category', 'post_tag'],
+      'position' => 5,
+      'exclude_from_search' => false
+    ];
+
+    register_post_type('service', $args);
+  }
+  add_action('init', 'promoteque_post_type_service');
 
   /**
    * Function to load the pages
@@ -109,12 +153,6 @@
       </div>
       ";
   }
-
-
-
-
-
-
 
 
 ?>
