@@ -27,6 +27,12 @@ $(document).ready(() => {
   $('#menu-main-navigation').addClass('navigation__list');
   $('#menu-main-navigation .menu-item').addClass('navigation__item');
   $('#menu-main-navigation .menu-item a').addClass('navigation__link');
+
+  $('.navigation__button').click(() => {
+    $('.navigation__list').css({
+      'visibility': 'visible',
+    });
+  });
   /**
    * Scroll to Top
    */

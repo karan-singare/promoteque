@@ -16,7 +16,7 @@
     </div>
   </div>
 
-    <header class="header" id="header">>
+    <header class="header" id="header">
       <div class="row header-row">
         <div class="header-container">
           <div class="site-logo">

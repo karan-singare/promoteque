@@ -1,6 +1,7 @@
 .navigation {
   height: 7rem;
   width: 7rem;
+  position: relative;
 
 
   &__checkbox {
@@ -18,19 +19,6 @@
     text-align: center;
     cursor: pointer;
 
-    // @include respond(big-desktop) {
-    //   top: 4rem;
-    //   right: 4rem;
-    // }
-    // @include respond(tab-port) {
-    //   top: 4rem;
-    //   right: 4rem;
-    // }
-    //
-    // @include respond(phone) {
-    //   top: 3rem;
-    //   right: 3rem;
-    // }
   }
 
   &__background {
@@ -38,28 +26,18 @@
     width: 7rem;
     border-radius: 50%;
     position: absolute;
-    background-image: radial-gradient(rgba(transparent, .9), rgba(transparent, .9));
+    background-image: radial-gradient(rgba(transparent, 1), rgba(transparent, 1));
     background-position: center center;
     background-size: cover;
 
     z-index: 100;
 
     transition: transform .6s cubic-bezier(0.83, 0, 0.17, 1);
-
-    // @include respond(tab-port) {
-    //   top: 4.5rem;
-    //   right: 4.5rem;
-    // }
-    //
-    // @include respond(phone) {
-    //   top: 3.5rem;
-    //   right: 3.5rem;
-    // }
   }
 
   &__nav {
+    background: $color-black;
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -73,10 +51,15 @@
   &__list{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 63%;
+    transform: translate(0%, -50%);
     list-style: none;
-    text-align: center;
+    text-align: right;
+
+    visibility: hidden;
+    @include respond(phone) {
+      left: 24%;
+    }
   };
 
   &__item, .menu-item {
@@ -103,7 +86,7 @@
       }
 
       @include respond(phone) {
-        font-size: 1.5rem;
+        font-size: 5rem;
         font-weight: 500;
       }
     }
@@ -116,7 +99,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(80);
+    // transform: scale(80);
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;
@@ -134,6 +117,11 @@
       height: 4px;
       background-color: $color-white;
       display: inline-block;
+
+      @include respond(tab-port) {
+        height: 2px;
+        width: 3.5rem;
+      }
     }
 
     &::before,

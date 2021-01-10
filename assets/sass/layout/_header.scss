@@ -2,10 +2,10 @@
   position: relative;
   height: 12vh;
   z-index: 2;
-  background-image: linear-gradient(to right, rgba(transparent, .8), rgba(transparent, 0));
 
   .header-row {
     height: 100%;
+    padding-top: 1rem;
   }
 
   &-container {
@@ -15,15 +15,16 @@
     grid-auto-flow: column;
     justify-content: space-between;
     align-content: center;
-    .navigation {
-      width: 7rem;
-      height: 7rem;
-    }
+    align-items: center;
 
     .site-logo {
       img {
         height: 6rem;
+        @include respond(phone) {
+          height: 4rem;
+        }
       }
+
     }
   }
 }
