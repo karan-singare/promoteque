@@ -121,10 +121,37 @@
   @include respond(phone) {
     &__content {
       grid-auto-flow: row;
+      grid-gap: 3rem;
+      &--right {
+        text-align: left;
+      }
+    }
+    &__heading {
+      font-size: 2rem;
+      color: $color-white;
+    }
+    &__text {
+      color: $color-white;
     }
     &::before {
       width: 100%;
     }
+
+    &--1 {
+      &::before {
+        background-image: linear-gradient(to top, rgba(transparent, .7), rgba(transparent, .9), rgba(transparent, 0)), url("../images/biking.jpg");
+      }
+    }
+    &--2 {
+      &::before {
+        background-image: linear-gradient(to top, rgba(transparent, .7), rgba(transparent, .9), rgba(transparent, 0)), url("../images/skateboard.jpg");
+      }
+      .photo-composition__content--right {
+        grid-row: 2/3;
+        text-align: left;
+      }
+    }
+
   }
 
 
