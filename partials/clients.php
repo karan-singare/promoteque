@@ -11,7 +11,7 @@
       'photo' => get_images_path() . 'client2.jpg',
     ],
     [
-      'title' => 'The Bakcspace',
+      'title' => 'The Backspace',
       'url' => 'https://www.instagram.com/p/CGrehgUA5n-/?utm_source=ig_web_copy_link',
       'photo' => get_images_path() . 'client3.jpg',
     ],

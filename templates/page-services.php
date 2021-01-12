@@ -64,6 +64,8 @@
     <?php wp_reset_postdata();  ?>
   </div>
 
+  .<a href="#" class="service--btn btn btn--hollow">Get in touch</a>
+
 </section>
 
 

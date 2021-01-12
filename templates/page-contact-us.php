@@ -63,14 +63,7 @@
           <li>
             <a href="tel:+44 7584297887">
               <svg>
-                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-twitter'; ?>"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+44 7584297887">
-              <svg>
-                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-youtube'; ?>"></use>
+                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-linkedin'; ?>"></use>
               </svg>
             </a>
           </li>

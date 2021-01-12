@@ -1,12 +1,54 @@
 .about-us {
-  font-size: 1.6rem;
+  color: $color-white;
+
+  background: $color-dark-background;
+  width: 100%;
+
+  .about-us-info {
+    margin: 0 auto;
+    width: 60% !important;
+  }
 
   .section__heading {
     text-align: left;
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
 }
 .administration {
-  padding-top: 10rem;
+  padding: 0 8rem 0 8rem;
+
+  .person {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8rem;
+    height: 60rem;
+    color: $color-black;
+
+    &__right {
+      align-self: center;
+    }
+    &__left {
+      height: 60rem;
+      img {
+        @include coverObject;
+        object-position: top;
+      }
+    }
+
+    &__name {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    &__designation {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
 }

@@ -13,8 +13,8 @@
 
   <div class="row">
     <div class="video-headings">
-      <h1 class="heading__primary heading__primary--main animate__pulse animate__animated animate__infinite">Design. Social. <span>Content.</span></h1>
-      <h1 class="heading__primary heading__primary--sub">Digital transformation starts here</h1>
+      <h1 class="heading__primary heading__primary--main">Design. Social. <span>Content.</span></h1>
+      <h1 class="heading__primary heading__primary--sub moving-text">Digital transformation starts here</h1>
     </div>
   </div>
 </div>

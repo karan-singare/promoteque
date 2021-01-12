@@ -51,5 +51,19 @@ $(document).ready(() => {
     window.scrollTo(0, $('#story').offset().top);
   });
 
+  /**
+   * Moving Text animation
+   */
+  // let val = 10;
+  // setInterval(() => {
+  //   $('.moving-text').css({
+  //     'width': `${val}%`,
+  //     'height': '8rem',
+  //   });
+  //   val += 10;
+  //   if (val === 100) {
+  //     val = 10;
+  //   }
+  // }, 500);
 
 });

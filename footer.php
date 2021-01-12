@@ -14,19 +14,19 @@
 
     <?php wp_footer(); ?>
     <script type="text/javascript">
-      if (window.location.pathname === "/") {
-        // document.addEventListener("DOMContentLoaded", bannerLoaded);
-        video = document.querySelector('.video-container video');
-
-        video.addEventListener('loadeddata', (e) => {
-          if (video.readyState === 4) {
-            $('.preloader-container').fadeOut();
-            if (video.paused) {
-              video.play();
-            }
-          }
-        });
-      }
+      // if (window.location.pathname === "/") {
+      //   // document.addEventListener("DOMContentLoaded", bannerLoaded);
+      //   video = document.querySelector('.video-container video');
+      //
+      //   video.addEventListener('loadeddata', (e) => {
+      //     if (video.readyState === 4) {
+      //       $('.preloader-container').fadeOut();
+      //       if (video.paused) {
+      //         video.play();
+      //       }
+      //     }
+      //   });
+      // }
 
       $(document).ready(function(){
         $('.owl-carousel').owlCarousel({

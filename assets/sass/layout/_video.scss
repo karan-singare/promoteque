@@ -49,6 +49,7 @@
   }
   .video-headings {
     text-align: center;
+    overflow-x: hidden;
 
     @include absCenter;
     span {
