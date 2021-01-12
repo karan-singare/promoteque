@@ -21,7 +21,13 @@
       <?php endforeach; ?>
 
       <div class="gallery__item gallery__item--video">
-        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>" autoplay muted loop poster="posterimage.jpg">
+        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>" autoplay muted loop>
+
+        </video>
+      </div>
+      <div class="gallery__item gallery__item--iphone">
+        <img src="<?php echo get_images_path() . 'iphone.png'; ?>" alt="" class="gallery__img" loading="lazy">
+        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>" autoplay muted loop>
 
         </video>
       </div>
