@@ -1,5 +1,17 @@
 .story, .strength {
-  background: $color-light-background;
+  background: $color-dark-background;
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  p {
+    color: $color-white;
+    font-size: 3rem;
+  }
 }
 .section__heading {
   font-size: 4rem;
