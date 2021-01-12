@@ -49,14 +49,25 @@
   }
   .video-headings {
     text-align: center;
-    @include absCenter;
+    // @include absCenter;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    margin-left: 20%;
 
     .heading__primary--main {
       margin-bottom: 1rem;
       color: $color-white;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      font-style: bold;
+      // font-size: 56px;
     }
     .heading__primary--sub {
       color: $color-white;
+      font-size: 48px;
+      font-weight: 300;
     }
   }
 

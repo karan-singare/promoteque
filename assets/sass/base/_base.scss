@@ -30,6 +30,8 @@ html {
 
 body {
   box-sizing: border-box;
+  // font-family: 'Raleway', sans-serrif;
+  font-family: Raleway, sans-serif !important;
 
   @include respond(tab-port) {
     padding: 0;

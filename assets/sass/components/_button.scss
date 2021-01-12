@@ -35,6 +35,13 @@
     color: $color-primary;
     border: 2px solid $color-primary;
     background: transparent;
+    border-radius: 0 !important;
+    text-transform: capitalize !important;
+    color: $color-white;
+    background: $color-primary;
+    font-weight: 500;
+    padding: 1rem 3rem !important;
+
   }
 
   &--animated {
