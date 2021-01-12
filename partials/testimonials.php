@@ -1,11 +1,11 @@
-<section class="testimonials">>
+<section class="testimonials">
   <h2 class="section__heading">What our customers Say</h2>
   <p class="section__description">
     Don’t take our word for it, see what our global clients have to say about the work we’ve done for them:
   </p>
 
   <div class="row">
-    <div class="">
+    <div class="owl-carousel owl-theme">
       <div class="testimonial">
         <div class="testimonial__photo">
           <img src="<?php echo get_images_path() . 'testimonial1.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">

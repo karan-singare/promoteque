@@ -17,17 +17,12 @@
   </div>
 
     <header class="header" id="header">
-      <div class="row header-row">
-        <div class="header-container">
-          <div class="site-logo">
-            <a href="/"><img src="<?php echo get_images_path() . 'site-logo.svg' ?>" alt="The Social Edition Logo"></a>
-          </div>
-          <?php get_template_part('partials/navigation'); ?>
-
+      <div class="header-container">
+        <div class="site-logo">
+          <a href="/"><img src="<?php echo get_images_path() . 'site-logo.svg' ?>" alt="The Social Edition Logo"></a>
         </div>
+        <?php get_template_part('partials/navigation'); ?>
 
       </div>
-
-
 
     </header>

@@ -28,6 +28,17 @@
     img {
       @include coverObject;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, rgba(transparent, .8), rgba(transparent, .3)) !important;
+    }
+
   }
   &__content {
     padding: 0 8rem;

@@ -18,7 +18,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-image: linear-gradient(to bottom, rgba(transparent, .7), rgba(transparent, .3), rgba(transparent, .7)) !important;
+      background-image: linear-gradient(to bottom, rgba(transparent, .8), rgba(transparent, .3)) !important;
     }
 
   }
@@ -49,12 +49,11 @@
   }
   .video-headings {
     text-align: center;
-    // @include absCenter;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    margin-left: 20%;
+
+    @include absCenter;
+    span {
+      color: $color-primary;
+    }
 
     .heading__primary--main {
       margin-bottom: 1rem;

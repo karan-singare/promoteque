@@ -51,4 +51,5 @@ $(document).ready(() => {
     window.scrollTo(0, $('#story').offset().top);
   });
 
+
 });
