@@ -125,8 +125,8 @@
       ],
       'blogs' => [
         'page_name' => 'blogs',
-        'page_title' => 'News, Views & Tips',
-        'page_description' => '<a href="https://thesocialedition.com/">The Social Edition</a> / News, Views & Tips',
+        'page_title' => 'News & Views',
+        'page_description' => 'Digital trends to keep you ahead of the game',
         'banner_img' => get_images_path() . 'blogs.jpg'
       ],
     ];

@@ -1,42 +1,68 @@
-@keyframes moveInLeft {
-  0%{
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
 
-  80% {
-    transform: translateX(1rem);
-  }
 
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    opacity:1;
   }
 }
 
-@keyframes moveInRight {
-  0%{
-    opacity: 0;
-    transform: translateX(10rem);
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
   }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    opacity:1;
   }
 }
-@keyframes moveInBottom {
-  0%{
-    opacity: 0;
-    transform: translateY(5rem);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
   }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* The style below is just for the appearance of the example div */
+
+.style {
+  width:90vw; height:90vh;
+  text-align:center;
+  padding-top:calc(50vh - 50px);
+  margin-left:5vw;
+  border:4px double #F00;
+  background-color:#000;
+}
+.style p {
+  color:#fff;
+  font-size:50px;
 }

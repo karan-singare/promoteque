@@ -1,7 +1,7 @@
 <?php
   $images = [];
-  for ($i=0; $i < 6; $i++) {
-    $images[$i] = get_images_path() . 'gallery' . ($i+1) . '.jpg';
+  for ($i=0; $i < 5; $i++) {
+    $images[$i] = get_images_path() . 'gallery' . ($i+1) . '.jpeg';
   }
 
  ?>
@@ -19,7 +19,12 @@
         </div>
 
       <?php endforeach; ?>
-      <
+
+      <div class="gallery__item gallery__item--video">
+        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>" autoplay muted loop poster="posterimage.jpg">
+
+        </video>
+      </div>
     </div>
   </div>
 

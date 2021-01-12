@@ -36,9 +36,9 @@
           <li>
             <a href="tel:+44 7584297887">
               <svg>
-                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-phone'; ?>"></use>
+                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-location2'; ?>"></use>
               </svg>
-              <span>New Delhi | London</span>
+              <span>Kolkata | London</span>
             </a>
           </li>
         </ul>

@@ -5,12 +5,17 @@
       <ul>
         <li><a href="">Privacy Policy</a></li>
         <li><a href="">FAQs</a></li>
+        <li>
+          <div class="site-logo">
+            <a href="/"><img src="<?php echo get_images_path() . 'site-logo.svg' ?>" alt="The Social Edition Logo"></a>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="col-1-of-4 offices">
       <h4>Offices</h4>
       <ul>
-        <li>New Delhi</li>
+        <li>Kolkata</li>
         <li>London</li>
       </ul>
     </div>
@@ -22,7 +27,7 @@
             <svg>
               <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-phone'; ?>"></use>
             </svg>
-            <span>+44 7584297887</span>
+            <span style="font-family: sans-serif;">+44 7584297887</span>
           </a>
         </li>
         <li>
@@ -55,14 +60,7 @@
         <li>
           <a href="tel:+44 7584297887">
             <svg>
-              <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-twitter'; ?>"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="tel:+44 7584297887">
-            <svg>
-              <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-youtube'; ?>"></use>
+              <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-linkedin'; ?>"></use>
             </svg>
           </a>
         </li>
