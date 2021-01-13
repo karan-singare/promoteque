@@ -22,6 +22,7 @@
   }
   &__img {
     @include coverObject;
+    object-position: top;
     border-radius: 50%;
   }
   &__text {
