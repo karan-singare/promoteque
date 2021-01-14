@@ -53,17 +53,20 @@
 
   }
   &__title {
-    // position: absolute;
-    // top: 5px;
-    // left: 1rem;
     z-index: 2;
-    font-weight: 400;
+    font-weight: 500 !important;
     @include absCenter;
-    // color: $color-white !important;
     font-size: 3rem;
     font-weight: bold;
-    // color: #afb1ae !important;
     color: $color-white;
+
+    // filter: blur(1px);
+    letter-spacing: .2rem;
+    text-shadow: 0 0 1rem $color-primary,
+                0 0 2rem $color-primary,
+                0 0 4rem $color-primary,
+                0 0 8rem $color-primary,
+                0 0 10rem $color-primary,
   }
 
   img {
