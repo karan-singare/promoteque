@@ -48,18 +48,18 @@
  ?>
 
 <section class="clients">
-  <h2 class="heading__primary heading__primary--main">Our Clients</h2>
-  <p>Here is the list of businesses we have worked with.</p>
   <div class="row">
+    <h2 class="heading__secondary">Our Clients</h2>
+    <p>Here is the list of businesses we have worked with.</p>
     <div class="clients-grid">
       <?php foreach ($clinets as $client): ?>
-        <div class="clients-grid-item">
-          <h3 class="clients-grid-item__title"><?php echo $client['title']; ?></h3>
-          <div class="clients-grid-item__photo">
+      <div class="clients-grid-item">
+        <h3 class="clients-grid-item__title"><?php echo $client['title']; ?></h3>
+        <div class="clients-grid-item__photo">
 
-          </div>
-          <img src="<?php echo $client['photo']; ?>" alt="" loading="lazy">
         </div>
+        <img src="<?php echo $client['photo']; ?>" alt="" loading="lazy">
+      </div>
       <?php endforeach; ?>
 
     </div>

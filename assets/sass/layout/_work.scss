@@ -1,6 +1,7 @@
 .work {
   background: $color-dark-background;
   padding: 10rem 0;
+  text-align: center;
 
   @include respond(tab-port) {
     .gallery {

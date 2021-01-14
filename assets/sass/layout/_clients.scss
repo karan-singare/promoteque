@@ -16,17 +16,12 @@
 }
 .clients-grid {
   display: grid;
-  // grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, 30rem);
   overflow: hidden;
   grid-gap: 2rem;
-  // justify-content: space-evenly;
-
-  @include respond(tab-port) {
-    grid-template-columns: repeat(auto-fit, 8rem);
-  }
-
+  justify-content: center;
 }
+
 .clients-grid-item {
   position: relative;
   padding: 2rem;
@@ -34,11 +29,6 @@
   width: 30rem;
   height: 30rem;
   border-radius: .3rem;
-
-  @include respond(tab-port) {
-    width: 8rem;
-    height: 8rem;
-  }
 
   &__photo {
     position: absolute;
@@ -49,7 +39,6 @@
     width: 100%;
     z-index: -1;
     border-radius: .3rem;
-
 
   }
   &__title {
@@ -94,5 +83,19 @@
     background-image: linear-gradient(rgba(transparent, .8), rgba(transparent, .8));
     z-index: 1;
 
+  }
+}
+
+@include respond(phone) {
+  .clients-grid {
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: 20rem;
+  }
+  .clients-grid-item {
+    height: 20rem;
+    width: 20rem;
+    &__title {
+      font-size: 2rem;
+    }
   }
 }
