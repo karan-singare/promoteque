@@ -52,3 +52,17 @@ ul {
     width: 3rem;
   }
 }
+@include respond(tab-port) {
+  .footer {
+    font-size: 3rem;
+  }
+  ul {
+    font-size: 2rem;
+  }
+  .connect {
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

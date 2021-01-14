@@ -1,36 +1,22 @@
 .row {
   max-width: $grid-width;
-
-  /* trick to align center one block into another */
   margin: 0 auto;
 
-  /* selects everything except the last child */
+  @include respond(tab-land) {
+    padding: 0 8rem;
+  }
+  @include respond(tab-port) {
+    padding: 0 2rem;
+  }
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
-
     @include respond(tab-port) {
       margin-bottom: $gutter-vertical-small;
     }
   }
-  @include respond(tab-port) {
-    padding: 0 3rem;
-  }
 
-  // @include respond(tab-port) {
-  //   max-width: 50rem;
-  // }
-
-  /**
-   * if all the child elements of div are floating them
-   * the height of the div becomes zero.
-   * fixed using the clearfix
-   */
   @include clearfix;
 
-  /* selects all the elements whose class attribute equals 'col-1' [class="col-1"] */
-  /* selects all the elements whose class attribute starts with 'col-1' [class^="col-1"] */
-  /* selects all the elements whose class attribute ends with 'col-1' [class$="col-1"] */
-  /* selects all the elements whose class attribute contains 'col-1' [class*="col-1"] */
   [class^="col-"] {
     float: left;
 

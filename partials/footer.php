@@ -1,18 +1,10 @@
 <footer class="footer footer--main">
   <div class="row">
-    <!-- <div class="site-logo">
-      <a href="/"><img src="<?php echo get_images_path() . 'site-logo.svg' ?>" alt="The Social Edition Logo"></a>
-    </div> -->
     <div class="col-1-of-4 policies">
       <h4>Policies</h4>
       <ul>
         <li><a href="">Privacy Policy</a></li>
         <li><a href="">FAQs</a></li>
-        <!-- <li>
-          <div class="site-logo">
-            <a href="/"><img src="<?php echo get_images_path() . 'site-logo.svg' ?>" alt="The Social Edition Logo"></a>
-          </div>
-        </li> -->
       </ul>
     </div>
     <div class="col-1-of-4 offices">
