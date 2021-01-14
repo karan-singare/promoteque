@@ -15,28 +15,16 @@
   &__headings {
     @include absCenter;
     top: 70%;
-    color: $color-white;
-
-    .heading__primary--main {
-
-    }
-    .heading__primary--sub {
-
-    }
-
+    text-align: center;
     .heading__primary {
-      text-align: center;
+      color: $color-white;
       &--main {
         margin-bottom: 1rem;
-        color: $color-white;
-        text-transform: capitalize;
-        letter-spacing: 0;
-        font-style: bold;
       }
       &--sub {
-        color: $color-white;
-        font-size: 48px;
-        font-weight: 300;
+        @include respond(tab-port) {
+          white-space: normal;
+        }
       }
     }
   }

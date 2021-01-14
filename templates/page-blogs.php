@@ -36,9 +36,24 @@
 
         <?php endwhile; ?>
       <?php endif; ?>
+      
+      <?php if ( $posts->have_posts() ): ?>
+        <?php while( $posts->have_posts() ): $posts->the_post(); ?>
+          <div class="post">
+            <div class="post__photo">
+              <a href="<?php echo get_post_permalink(get_the_ID()); ?>">
+                <img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="">
+              </a>
+            </div>
+            <a href="<?php echo get_post_permalink(get_the_ID()); ?>">
+              <h3 class="post__title"><?php the_title(); ?></h3>
+            </a>
+          </div>
 
-      <?php wp_reset_postdata();  ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
     </div>
+    <?php wp_reset_postdata();  ?>
 
   </div>
 

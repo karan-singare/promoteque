@@ -163,7 +163,7 @@
         </div>
         <div class='banner__headings'>
         <h1 class='heading__primary heading__primary--main'>" . $page['page_title'] . "</h1>
-        <h2 class='heading__primary heading__primary--sub'>" . $page['page_description'] . "</h2>
+        <h1 class='heading__primary heading__primary--sub'>" . $page['page_description'] . "</h1>
         </div>
         </div>
         ";
