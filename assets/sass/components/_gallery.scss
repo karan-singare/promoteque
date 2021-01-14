@@ -1,7 +1,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 20rem);
+  grid-template-rows: 60rem;
   justify-content: center;
   grid-gap: .5rem;
 
@@ -16,19 +16,18 @@
 
 
 
-  &__image-items {
-    transform: translateX(8%);
-
-    @media (max-width: 400px) {
-      transform: translateX(0%);
+  &__image-item {
+    img {
+      @include coverObject;
     }
   }
 
+
   &__video-item {
-    grid-row: 1/4;
     &--1 {
       video {
         @include coverObject;
+        width: 84%;
       }
     }
     &--2 {

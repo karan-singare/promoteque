@@ -41,7 +41,7 @@
         <h3 class="person__name">
           Priyanka Mehra Dayal
         </h3>
-        <span class="person__designation">Founder</span>
+        <span class="person__designation">Creative Director</span>
       </div>
       <div class="person__left">
         <img src="<?php echo get_images_path() . 'founder.png' ?>" alt="">
