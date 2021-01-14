@@ -1,7 +1,7 @@
 .testimonial {
   display: grid;
   grid-auto-flow: column;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   grid-gap: 5rem;
   align-items: center;
 
@@ -27,6 +27,7 @@
   }
   &__text {
     margin-bottom: 1rem;
+    font-size: 1.8rem;
   }
   &__author {
     color: $color-primary;
@@ -39,6 +40,12 @@
     }
     &__text {
       font-size: 1.4rem;
+    }
+  }
+  @include respond(phone) {
+    grid-gap: 2.5rem;
+    &__text {
+      font-size: 1.6rem;
     }
   }
 

@@ -1,10 +1,10 @@
 <section class="testimonials">
-  <h2 class="section__heading">What our customers Say</h2>
-  <p class="section__description">
-    Don’t take our word for it, see what our global clients have to say about the work we’ve done for them:
-  </p>
-
   <div class="row">
+    <h2 class="heading__secondary">What our customers Say</h2>
+    <p class="section__description">
+      Don’t take our word for it, see what our global clients have to say about the work we’ve done for them:
+    </p>
+
     <div class="owl-carousel owl-theme">
       <div class="testimonial">
         <div class="testimonial__photo">
@@ -38,7 +38,7 @@
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
-          “What really differentiates The Social Edition is the superiority of their content strategy. Priyanka and the team bring a well planned, result-driven offering to the table.”
+            “What really differentiates The Social Edition is the superiority of their content strategy. Priyanka and the team bring a well planned, result-driven offering to the table.”
           </p>
           <h3 class="testimonial__author">Krushmi Chheda</h3>
           <h3 class="testimonial__compay">CORE</h3>
