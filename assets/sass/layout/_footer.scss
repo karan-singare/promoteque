@@ -20,49 +20,52 @@
   .site-logo {
     margin-top: 2rem;
   }
-}
-ul {
-  list-style: none;
-  font-size: 1.6rem;
-  font-weight: thin;
-  a {
-    color: $color-white;
-  }
-}
-.contact {
-  a {
-    display: flex;
-    align-content: center;
-    align-items: center;
-  }
-  svg {
-    height: 1.6rem;
-    width: 1.6rem;
-    fill: $color-white;
-    margin-right: 1rem;
-  }
-}
-.connect {
   ul {
-    display: flex;
-    grid-gap: 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: thin;
+    a {
+      color: $color-white;
+    }
   }
-  svg {
-    height: 3rem;
-    width: 3rem;
+  .contact {
+    a {
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
+    svg {
+      height: 1.6rem;
+      width: 1.6rem;
+      fill: $color-white;
+      margin-right: 1rem;
+    }
   }
+  .connect {
+    ul {
+      display: flex;
+      grid-gap: 2rem;
+    }
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
 }
+
 @include respond(tab-port) {
   .footer {
     font-size: 3rem;
-  }
-  ul {
-    font-size: 2rem;
-  }
-  .connect {
-    svg {
-      width: 4rem;
-      height: 4rem;
+    ul {
+      font-size: 2rem;
+    }
+    .connect {
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
+
 }
