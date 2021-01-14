@@ -79,3 +79,29 @@
   }
 
 }
+
+.anim-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: animate 4s infinite linear;
+}
+
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 10%;
+  }
+  50% {
+    width: 100%;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
