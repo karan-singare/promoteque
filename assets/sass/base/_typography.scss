@@ -13,6 +13,7 @@ body {
   color: $color-primary;
   text-transform: capitalize;
   margin-bottom: 6rem;
+  white-space: nowrap;
 
   &--main {
     display: block;
