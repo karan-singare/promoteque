@@ -9,15 +9,31 @@
   }
   .contact {
     margin: 4rem 0;
+    svg {
+      margin-right: .5rem;
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   .connect {
     margin-top: 10rem;
+    ul {
+      display: flex;
+      grid-gap: 1rem;
+      svg {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
   }
   a {
     color: $color-black;
     svg {
       fill: $color-black;
     }
+  }
+  ul {
+    list-style: none;
   }
 }

@@ -12,7 +12,7 @@
 
   <div class="row" >
     <div class="col-1-of-2">
-      <h2 class="section__heading">Contact Us</h2>
+      <h2 class="heading__secondary">Contact Us</h2>
       <p>Leave us your details and we will get back to you as soon as possible.</p>
 
       <div class="contact">
