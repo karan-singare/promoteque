@@ -4,7 +4,6 @@
       <h4>Policies</h4>
       <ul>
         <li><a href="">Privacy Policy</a></li>
-        <li><a href="">FAQs</a></li>
       </ul>
     </div>
     <div class="col-1-of-4 offices">
@@ -20,7 +19,7 @@
         <li>
           <a href="tel:+44 7584297887">
             <svg>
-              <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-phone'; ?>"></use>
+              <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-whatsapp'; ?>"></use>
             </svg>
             <span style="font-family: sans-serif;">+44 7584297887</span>
           </a>
@@ -38,22 +37,22 @@
     <div class="col-1-of-4 connect">
       <h4>Connect</h4>
       <ul>
-        <li>
-          <a href="tel:+44 7584297887">
+        <!-- <li>
+          <a href="tel:+44 7584297887" target="_blank">
             <svg>
               <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-facebook'; ?>"></use>
             </svg>
           </a>
-        </li>
+        </li> -->
         <li>
-          <a href="tel:+44 7584297887">
+          <a href="https://www.instagram.com/the.social.edition/" target="_blank">
             <svg>
               <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-instagram'; ?>"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="tel:+44 7584297887">
+          <a href="https://www.linkedin.com/in/priyanka-mehra-dayal-1935624b/">
             <svg>
               <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-linkedin'; ?>"></use>
             </svg>

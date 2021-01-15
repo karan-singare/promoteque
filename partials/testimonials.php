@@ -8,11 +8,11 @@
     <div class="owl-carousel owl-theme">
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial1.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
+          <img src="<?php echo get_images_path() . 'testimonial3.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
-            "Thank you for all the effort that you put in to make the launch of the brand a success. The social media was handled beautifully.”
+            "Thank you for all the effort that you put in to make the launch of the brand a success. The social media and content strategy were handled beautifully.”
           </p>
           <h3 class="testimonial__author">Namrata Rajpal</h3>
           <h3 class="testimonial__compay">The House of Exotique</h3>
@@ -34,7 +34,7 @@
       </div>
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial3.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
+          <img src="<?php echo get_images_path() . 'testimonial1.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">

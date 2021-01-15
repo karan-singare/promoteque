@@ -20,9 +20,9 @@
           <li>
             <a href="tel:+44 7584297887">
               <svg>
-                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-phone'; ?>"></use>
+                <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-whatsapp'; ?>"></use>
               </svg>
-              <span>+44 7584297887</span>
+              <span style="font-family: sans-serif;">+44 7584297887</span>
             </a>
           </li>
           <li>
@@ -46,22 +46,22 @@
 
       <div class="connect">
         <ul>
-          <li>
-            <a href="tel:+44 7584297887">
+          <!-- <li>
+            <a href="tel:+44 7584297887" target="_blank">
               <svg>
                 <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-facebook'; ?>"></use>
               </svg>
             </a>
-          </li>
+          </li> -->
           <li>
-            <a href="tel:+44 7584297887">
+            <a href="https://www.instagram.com/the.social.edition/" target="_blank">
               <svg>
                 <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-instagram'; ?>"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="tel:+44 7584297887">
+            <a href="https://www.linkedin.com/in/priyanka-mehra-dayal-1935624b/" target="_blank">
               <svg>
                 <use xlink:href="<?php echo get_images_path() . 'sprite.svg#icon-linkedin'; ?>"></use>
               </svg>
@@ -72,8 +72,12 @@
 
     </div>
     <div class="col-1-of-2">
+      <!-- [fluentform id="1"] -->
+      <?php
+        // echo do_shortcode('[contact-form-7 id="51" title="Contact form"]');
+        echo do_shortcode('[fluentform id="1"]');
 
-      <?php echo do_shortcode('[fluentform id="1"]'); ?>
+       ?>
 
     </div>
   </div>

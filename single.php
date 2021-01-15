@@ -2,7 +2,7 @@
 
   get_header();
 
-  load_banner("");
+  load_banner("blogs");
 
   $args = [
     'post_type' => 'post',
