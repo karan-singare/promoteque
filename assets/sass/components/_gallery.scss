@@ -2,58 +2,32 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 20rem);
+  grid-template-rows: 60rem;
 
   &__item {
-    &:nth-child(1) {
-      grid-column: 1/3;
-    }
-    &:nth-child(6) {
-      grid-column: 2/-1;
-    }
-    &:nth-child(4) {
-      grid-row: 2/4;
-    }
     &--video {
-      grid-row: 2/4;
-      grid-column: 2/3 !important;
-
       video {
-          @include coverObject;
+        @include coverObject;
       }
     }
   }
   &__img {
     @include coverObject;
+    object-fit: cover;
   }
 }
 
-@include respond(tab-port) {
+@include respond(phone) {
   .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60rem;
+    grid-gap: 0;
+    justify-content: center;
     &__img {
-      object-position: left;
+
     }
     &__item {
-      &:nth-child(1) {
-        grid-column: 1/3;
-        img {
-          object-position: bottom;
-        }
-      }
-      &:nth-child(6) {
-        grid-column: 2/-1;
-      }
-      &:nth-child(4) {
-        grid-row: 2/4;
-      }
-      &--video {
-        grid-row: 2/4;
-        grid-column: 2/3 !important;
 
-        video {
-            @include coverObject;
-        }
-      }
     }
   }
 }
