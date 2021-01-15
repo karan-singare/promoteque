@@ -56,3 +56,28 @@ a {
     @include coverObject;
   }
 }
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    justify-content: center;
+    &__title {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    &__photo {
+      width: 100%;
+      height: 20rem;
+      img {
+        @include coverObject;
+      }
+    }
+  }
+}

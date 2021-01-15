@@ -79,9 +79,12 @@
         display: inline-block;
       }
 
-      @include respond(phone) {
-        font-size: 4rem;
+      @include respond(tab-land) {
+        font-size: 5rem;
         font-weight: 500;
+      }
+      @include respond(tab-port) {
+        font-size: 4rem;
       }
     }
 
