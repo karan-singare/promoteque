@@ -40,7 +40,13 @@
     color: $color-white;
     background: $color-primary;
     font-weight: 500;
+    border: 1px solid transparent;
     padding: 1rem 3rem !important;
+
+    &:hover {
+      color: $color-black !important;
+      border: 1px solid $color-black;
+    }
 
   }
 

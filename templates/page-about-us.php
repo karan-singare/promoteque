@@ -48,7 +48,7 @@
       <span class="person__designation">Creative Director</span>
     </div>
     <div class="person__left">
-      <img src="<?php echo get_images_path() . 'founder.png' ?>" alt="">
+      <img src="<?php echo get_images_path() . 'founder.jpg' ?>" alt="">
     </div>
 
 

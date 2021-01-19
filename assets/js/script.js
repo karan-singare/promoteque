@@ -41,18 +41,12 @@ $(document).ready(() => {
   });
 
   /**
-   * Moving Text animation
+   * Fixing the font-size issue on the screen width 1280
    */
-  // let val = 10;
-  // setInterval(() => {
-  //   $('.moving-text').css({
-  //     'width': `${val}%`,
-  //     'height': '8rem',
-  //   });
-  //   val += 10;
-  //   if (val === 100) {
-  //     val = 10;
-  //   }
-  // }, 500);
+  if (screen.width === 1280) {
+    $('.navigation__link').css({
+      'font-size': '4rem',
+    });
+  }
 
 });

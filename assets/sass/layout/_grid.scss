@@ -1,6 +1,7 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
+  padding: 0 2rem;
 
   @include respond(tab-land) {
     padding: 0 8rem;

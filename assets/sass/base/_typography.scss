@@ -79,3 +79,11 @@ body {
     font-size: 2rem;
   }
 }
+@media (max-width: 350px) {
+  .heading__primary {
+    &--sub {
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+    }
+  }
+}

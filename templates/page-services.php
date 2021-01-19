@@ -64,9 +64,11 @@
 
       <?php wp_reset_postdata();  ?>
     </div>
+
+    <a href="/contact-us" class="service--btn btn btn--hollow get-started">Get Started</a>
+
   </div>
 
-  <!-- <a href="#" class="service--btn btn btn--hollow">Get in touch</a> -->
 
 </section>
 
