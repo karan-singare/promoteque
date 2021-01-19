@@ -8,7 +8,7 @@
     <div class="owl-carousel owl-theme">
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial3.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
+          <img src="<?php echo get_images_path() . 'testimonial3.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
@@ -21,11 +21,11 @@
       </div>
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial2.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
+          <img src="<?php echo get_images_path() . 'testimonial2.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">
-            “The team at The Social Edition have been excellent. They have helped me startegise, plan and execute a winning personal branding presence across multiple platforms including help launch my Podcast from scratch.”
+            “The team at The Social Edition have been excellent. They have helped me strategise, plan and execute a winning personal branding presence across multiple platforms including help launch my Podcast from scratch.”
           </p>
           <h3 class="testimonial__author">Meenakshi Kuwadekar</h3>
           <h3 class="testimonial__compay"></h3>
@@ -34,7 +34,7 @@
       </div>
       <div class="testimonial">
         <div class="testimonial__photo">
-          <img src="<?php echo get_images_path() . 'testimonial1.jpeg'; ?>" alt="" class="testimonial__img" loading="lazy">
+          <img src="<?php echo get_images_path() . 'testimonial1.jpg'; ?>" alt="" class="testimonial__img" loading="lazy">
         </div>
         <div class="testimonial__content">
           <p class="testimonial__text">

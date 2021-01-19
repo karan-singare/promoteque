@@ -1,6 +1,10 @@
 .services-section {
   background: $color-light-background;
   padding: 10rem 0;
+
+  a {
+    color: $color-primary;
+  }
 }
 .services {
   display: grid;

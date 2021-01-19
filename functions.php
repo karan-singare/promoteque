@@ -15,7 +15,7 @@
   function promoteque_register_scripts() {
     wp_enqueue_script('promoteque-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], '3.5.1', false);
     wp_enqueue_script('promoteque-owl-carousel', get_template_directory_uri() . '/assets/js/owl-carousel.js', ['promoteque-jquery'], '1.0', false);
-    wp_enqueue_script('promoteque-main', get_template_directory_uri() . '/assets/js/script.js', ['promoteque-jquery'], '1.0', false);
+    wp_enqueue_script('promoteque-main', get_template_directory_uri() . '/assets/js/script.js', ['promoteque-jquery'], '1.0', true);
   }
   add_action('wp_enqueue_scripts', 'promoteque_register_scripts');
 
@@ -40,7 +40,7 @@
    */
 
   function get_favicon() {
-    echo get_template_directory_uri() . '/assets/images/favicon.png';
+    echo get_template_directory_uri() . '/assets/images/favicon.jpg';
   }
 
   function get_images_path() {

@@ -3,7 +3,7 @@
     [
       'title' => 'FFCI',
       'url' => 'http://ffci.co.uk/',
-      'photo' => get_images_path() . 'client1.png',
+      'photo' => get_images_path() . 'client1.jpg',
     ],
     [
       'title' => 'Core',
@@ -38,7 +38,7 @@
     [
       'title' => 'SM Projects Pvt Ltd',
       'url' => 'https://www.instagram.com/p/CHz_tM2pqNK/?utm_source=ig_web_copy_link',
-      'photo' => get_images_path() . 'client8.png',
+      'photo' => get_images_path() . 'client8.jpg',
     ],
 
 

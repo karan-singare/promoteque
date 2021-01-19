@@ -5,9 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Creative Service - The Social Edition</title>
-  <link rel="icon" href="<?php get_favicon(); ?>" type="image/png">
+  <link rel="icon" href="<?php get_favicon(); ?>" type="image/jpg">
 
   <?php wp_head(); ?>
+
+  <script type="text/javascript">
+    /**
+    * Preloader Handler
+    */
+    function hidePreloader() {
+      $('.preloader-container').fadeOut();
+    }
+  </script>
 
 </head>
 <body <?php body_class(); ?>>

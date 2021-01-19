@@ -6,7 +6,7 @@
     <div class="gallery">
 
       <div class="gallery__item">
-        <img src="<?php echo get_images_path() . 'podcast.png'; ?>" alt="" class="gallery__img" loading="lazy">
+        <img src="<?php echo get_images_path() . 'podcast.jpg'; ?>" alt="" class="gallery__img" loading="lazy">
       </div>
 
       <div class="gallery__item gallery__item--video">
@@ -16,7 +16,7 @@
       </div>
 
       <div class="gallery__item">
-        <img src="<?php echo get_images_path() . 'ipad.png'; ?>" alt="" class="gallery__img" loading="lazy">
+        <img src="<?php echo get_images_path() . 'ipad.jpg'; ?>" alt="" class="gallery__img" loading="lazy">
       </div>
     </div>
   </div>

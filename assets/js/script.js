@@ -1,26 +1,15 @@
-/**
-* Preloader Handler
-*/
-function hidePreloader() {
-  $('.preloader-container').fadeOut();
-}
-
-
-
 $(document).ready(() => {
   // Handling the preloader of the website in the pages which do not have
-  const pages = [
-    '/',
-    '/about-us/',
-    '/contact-us/',
-    '/services/',
-    '/blogs/'
-  ];
+  // const pages = [
+  //   '/',
+  //   '/about-us/',
+  //   '/contact-us/',
+  //   '/services/',
+  //   '/blogs/'
+  // ];
   const pathname = window.location.pathname;
-  for (let i=0; i < pages.length; i++ ) {
-    if (pathname !== pages[i]) {
-      $('.preloader-container').fadeOut();
-    }
+  if (pathname === '/') {
+    $('.preloader-container').fadeOut();
   }
 
   $('.menu-main-navigation-container').addClass('navigation__nav');
