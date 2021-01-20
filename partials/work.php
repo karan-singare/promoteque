@@ -10,7 +10,7 @@
       </div>
 
       <div class="gallery__item gallery__item--video">
-        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>" autoplay muted loop playsinline>
+        <video src="<?php echo get_images_path() . 'gallery-vid.mp4'; ?>"  muted loop playsinline autoplay>
 
         </video>
       </div>

@@ -14,6 +14,7 @@
           items: 1,
           loop: true,
           autoplay: true,
+          autoplayTimeout: 8000,
           autoplayHoverPause: true,
           responsiveClass: true,
           dots: true,

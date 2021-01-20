@@ -49,4 +49,31 @@ $(document).ready(() => {
     });
   }
 
+  /**
+   * Auto playing the videos
+   */
+  const banner_video = document.querySelector('.video-container video');
+  const work_video = document.querySelector('.work video');
+
+  const interval1 = setInterval(() => {
+    if (banner_video.readyState >=3) {
+      if (banner_video.paused) {
+        banner_video.play();
+        banner_video.controls = false;
+
+      }
+      clearInterval(interval1);
+    }
+  }, 500);
+
+  const interval2 = setInterval(() => {
+    if (work_video.readyState >=3) {
+      if (work_video.paused) {
+        work_video.play();
+        banner_video.controls = false;
+      }
+      clearInterval(interval2);
+    }
+  }, 500);
+
 });
