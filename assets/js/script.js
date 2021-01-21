@@ -43,11 +43,39 @@ $(document).ready(() => {
   /**
    * Fixing the font-size issue on the screen width 1280
    */
-  if (screen.width === 1280) {
-    $('.navigation__link').css({
-      'font-size': '4rem',
-    });
-  }
+  // switch (screen.width) {
+  //   case 1280:
+  //     $('.navigation__link').css({
+  //       'font-size': '4rem',
+  //     });
+  //     break;
+  //   case 960:
+  //     $('.navigation__link').css({
+  //       'font-size': '3rem',
+  //     });
+  //     break;
+  //   case 1024:
+  //     $('.navigation__link').css({
+  //       'font-size': '3rem',
+  //     });
+  //     break;
+  //   case 928:
+  //     $('.navigation__link').css({
+  //       'font-size': '3rem',
+  //       'margin-right': '2rem'
+  //     });
+  //   case 1360:
+  //     $('.navigation__link').css({
+  //       'font-size': '4rem',
+  //     });
+  //   case 1368:
+  //     $('.navigation__link').css({
+  //       'font-size': '4rem',
+  //     });
+  //     break;
+  //   default:
+  //
+  // }
 
   /**
    * Auto playing the videos
@@ -56,7 +84,7 @@ $(document).ready(() => {
   const work_video = document.querySelector('.work video');
 
   const interval1 = setInterval(() => {
-    if (banner_video.readyState >=3) {
+    if (banner_video !== null && banner_video.readyState >=3) {
       if (banner_video.paused) {
         banner_video.play();
         banner_video.controls = false;
@@ -67,7 +95,7 @@ $(document).ready(() => {
   }, 500);
 
   const interval2 = setInterval(() => {
-    if (work_video.readyState >=3) {
+    if (work_video !== null && work_video.readyState >=3) {
       if (work_video.paused) {
         work_video.play();
         banner_video.controls = false;
