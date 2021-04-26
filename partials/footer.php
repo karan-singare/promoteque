@@ -64,4 +64,5 @@
 </footer>
 <div class="footer__sub">
   <p class="copyright"><a href="/">The Social Edition</a> &copy; 2021 All Rights Reserved.</p>
+  <p class="copyright" style="font-size: 1.1rem;">Designed by <a href="https://github.com/karan-singare" target="_blank">Karan Singare</a></p>
 </div>
